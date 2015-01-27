@@ -19,7 +19,7 @@ class Keychain::Certificate < Sec::Base
   register_type 'SecCertificate'
 
   ATTR_MAP = {CF::Base.typecast(Sec::kSecAttrAccessible) => :accessible,
-              CF::Base.typecast(Sec::kSecAttrAccessControl) => :access_control,
+              #CF::Base.typecast(Sec::kSecAttrAccessControl) => :access_control,
               CF::Base.typecast(Sec::kSecAttrAccessGroup) => :access_group,
               CF::Base.typecast(Sec::kSecAttrCertificateType) => :certificate_type,
               CF::Base.typecast(Sec::kSecAttrCertificateEncoding) => :certificate_encoding,
