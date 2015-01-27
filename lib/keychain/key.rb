@@ -1,6 +1,6 @@
 module Sec
   attach_variable 'kSecAttrAccessible', :pointer
-  attach_variable 'kSecAttrAccessControl', :pointer
+  #attach_variable 'kSecAttrAccessControl', :pointer
   attach_variable 'kSecAttrAccessGroup', :pointer
   attach_variable 'kSecAttrKeyClass', :pointer
   attach_variable 'kSecAttrApplicationLabel', :pointer
