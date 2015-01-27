@@ -57,7 +57,7 @@ class Keychain::Key < Sec::Base
   register_type 'SecKey'
 
   ATTR_MAP = {CF::Base.typecast(Sec::kSecAttrAccessible) => :accessible,
-              CF::Base.typecast(Sec::kSecAttrAccessControl) => :access_control,
+              #CF::Base.typecast(Sec::kSecAttrAccessControl) => :access_control,
               CF::Base.typecast(Sec::kSecAttrAccessGroup) => :access_group,
               CF::Base.typecast(Sec::kSecAttrKeyClass) => :key_class,
               CF::Base.typecast(Sec::kSecAttrLabel) => :label,
